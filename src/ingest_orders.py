@@ -17,7 +17,7 @@ No transformations.
 #-----------------------------
 
 import csv
-import logging
+from src.utils.logger.setup_logger import setup_logger
 from pathlib import Path
 
 #-----------------------------
@@ -42,7 +42,7 @@ REQUIRED_COLUMNS = {
 # Logging
 #-----------------------------
 
-logger = logging.getLogger(__name__)
+logger = setup_logger()
 
 #-----------------------------
 # Helper Functions

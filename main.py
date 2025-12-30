@@ -8,7 +8,7 @@ from src.ingest_orders import ingest_orders
 
 def main():
     print("Entry Point")
-    setup_logger()
+    logger = setup_logger()
 
     logger = logging.getLogger(__name__)
     logger.info("Starting Olist Order Ingestion")
