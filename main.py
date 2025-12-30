@@ -16,7 +16,7 @@ def main():
     valid, invalid = ingest_orders()
 
     logger.info(f"Valid records   : {len(valid)}")
-    logger.info(f"Invalid records : {len(invalid)}")
+    logger.warning(f"Invalid records : {len(invalid)}")
     logger.info("Orders ingestion completed successfully")
 
 if __name__ == "__main__":
